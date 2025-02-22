@@ -1,7 +1,7 @@
 pipeline{
   tools{
-    jdk 'JAVA_HOME'
-	maven 'M2_HOME'
+    jdk 'JAVA_HOME2'
+	maven 'M2_HOME2'
   }
   agent any
   stages{
@@ -14,19 +14,19 @@ pipeline{
    stage('compile')
    {
      steps{
-	   sh 'mvn compile'
+	   bat 'mvn compile'
 	 }
    }
    stage('test')
    {
      steps{
-	   sh 'mvn test'
+	   bat 'mvn test'
 	 }
    }
    stage('package')
    {
      steps{
-	   sh 'mvn package'
+	   bat 'mvn package'
 	 }
    }
   }
