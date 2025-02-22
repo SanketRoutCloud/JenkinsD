@@ -3,7 +3,7 @@ pipeline {
         jdk 'JAVA_HOME1' 
         maven 'MAVEN_HOME1' 
     }
-    agent { label 'windows' }
+    agent { label 'UbuntuNode' }
     stages {
         stage('checkout') {
             steps {
