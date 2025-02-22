@@ -3,7 +3,7 @@ pipeline{
     jdk 'JAVA_HOME2'
 	maven 'M2_HOME2'
   }
-  agent any
+  agent { label 'windows' }
   stages{
    stage('checkout')
    {
