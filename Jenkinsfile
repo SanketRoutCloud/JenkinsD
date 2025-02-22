@@ -3,7 +3,7 @@ pipeline {
         jdk 'JAVA_HOME2' 
         maven 'MAVEN_HOME2' 
     }
-    agent { label 'windows' }
+    agent { label 'windowSlave' }
     stages {
         stage('checkout') {
             steps {
