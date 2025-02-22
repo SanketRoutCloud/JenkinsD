@@ -1,7 +1,7 @@
 pipeline{
   tools{
     jdk 'JAVA_HOME2'
-	maven 'MAVEN_HOME2'
+    maven 'MAVEN_HOME2'
   }
   agent { label 'windows' }
   stages{
